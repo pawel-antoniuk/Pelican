@@ -11,129 +11,129 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ClientImpl.cpp">
+    <ClCompile Include="_ClientImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_GetRequestImpl.cpp">
+    <ClCompile Include="_GetRequestImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_PostRequestImpl.cpp">
+    <ClCompile Include="_PostRequestImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ServerImpl.cpp">
+    <ClCompile Include="_ServerImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\DefaultResponse.cpp">
+    <ClCompile Include="DefaultResponse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\FileReader.cpp">
+    <ClCompile Include="FileReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPGetRequest.cpp">
+    <ClCompile Include="HTTPGetRequest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPListenerAbstract.cpp">
+    <ClCompile Include="HTTPListenerAbstract.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPPostRequest.cpp">
+    <ClCompile Include="HTTPPostRequest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IP.cpp">
+    <ClCompile Include="IP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\Main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\PipeListener.cpp">
+    <ClCompile Include="PipeListener.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\RequestParser.cpp">
+    <ClCompile Include="RequestParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketException.cpp">
+    <ClCompile Include="SocketException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketManager.cpp">
+    <ClCompile Include="SocketManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ClientImpl.h">
+    <ClInclude Include="_ClientImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_GetRequestImpl.h">
+    <ClInclude Include="_GetRequestImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_PostRequestImpl.h">
+    <ClInclude Include="_PostRequestImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ServerImpl.h">
+    <ClInclude Include="_ServerImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\Data.h">
+    <ClInclude Include="Data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\DefaultResponse.h">
+    <ClInclude Include="DefaultResponse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\FileReader.h">
+    <ClInclude Include="FileReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPGetRequest.h">
+    <ClInclude Include="HTTPGetRequest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPListenerAbstract.h">
+    <ClInclude Include="HTTPListenerAbstract.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPPostRequest.h">
+    <ClInclude Include="HTTPPostRequest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IClient.h">
+    <ClInclude Include="IClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IGetRequest.h">
+    <ClInclude Include="IGetRequest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IMessageSender.h">
+    <ClInclude Include="IMessageSender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IMetadata.h">
+    <ClInclude Include="IMetadata.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IP.h">
+    <ClInclude Include="IP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IPipeElement.h">
+    <ClInclude Include="IPipeElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IPostRequest.h">
+    <ClInclude Include="IPostRequest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IRequest.h">
+    <ClInclude Include="IRequest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IResponse.h">
+    <ClInclude Include="IResponse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IServer.h">
+    <ClInclude Include="IServer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IServerListener.h">
+    <ClInclude Include="IServerListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\PipeListener.h">
+    <ClInclude Include="PipeListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\ReqestEventCallerAbstract.h">
+    <ClInclude Include="ReqestEventCallerAbstract.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\RequestParser.h">
+    <ClInclude Include="RequestParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketException.h">
+    <ClInclude Include="SocketException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketManager.h">
+    <ClInclude Include="SocketManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

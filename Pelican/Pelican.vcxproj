@@ -10,6 +10,51 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DefaultResponse.cpp" />
+    <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="HTTPGetRequest.cpp" />
+    <ClCompile Include="HTTPListenerAbstract.cpp" />
+    <ClCompile Include="HTTPPostRequest.cpp" />
+    <ClCompile Include="IP.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PipeListener.cpp" />
+    <ClCompile Include="RequestParser.cpp" />
+    <ClCompile Include="SocketException.cpp" />
+    <ClCompile Include="SocketManager.cpp" />
+    <ClCompile Include="_ClientImpl.cpp" />
+    <ClCompile Include="_GetRequestImpl.cpp" />
+    <ClCompile Include="_PostRequestImpl.cpp" />
+    <ClCompile Include="_ServerImpl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="DefaultResponse.h" />
+    <ClInclude Include="FileReader.h" />
+    <ClInclude Include="HTTPGetRequest.h" />
+    <ClInclude Include="HTTPListenerAbstract.h" />
+    <ClInclude Include="HTTPPostRequest.h" />
+    <ClInclude Include="IClient.h" />
+    <ClInclude Include="IGetRequest.h" />
+    <ClInclude Include="IMessageSender.h" />
+    <ClInclude Include="IMetadata.h" />
+    <ClInclude Include="IP.h" />
+    <ClInclude Include="IPipeElement.h" />
+    <ClInclude Include="IPostRequest.h" />
+    <ClInclude Include="IRequest.h" />
+    <ClInclude Include="IResponse.h" />
+    <ClInclude Include="IServer.h" />
+    <ClInclude Include="IServerListener.h" />
+    <ClInclude Include="PipeListener.h" />
+    <ClInclude Include="ReqestEventCallerAbstract.h" />
+    <ClInclude Include="RequestParser.h" />
+    <ClInclude Include="SocketException.h" />
+    <ClInclude Include="SocketManager.h" />
+    <ClInclude Include="_ClientImpl.h" />
+    <ClInclude Include="_GetRequestImpl.h" />
+    <ClInclude Include="_PostRequestImpl.h" />
+    <ClInclude Include="_ServerImpl.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E870BA14-F2C7-4872-BF37-EC62D809F2E2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,51 +122,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\DefaultResponse.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\FileReader.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPGetRequest.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPListenerAbstract.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPPostRequest.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IP.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\Main.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\PipeListener.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\RequestParser.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketException.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketManager.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ClientImpl.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_GetRequestImpl.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_PostRequestImpl.cpp" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ServerImpl.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\Data.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\DefaultResponse.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\FileReader.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPGetRequest.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPListenerAbstract.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\HTTPPostRequest.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IClient.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IGetRequest.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IMessageSender.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IMetadata.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IP.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IPipeElement.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IPostRequest.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IRequest.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IResponse.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IServer.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\IServerListener.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\PipeListener.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\ReqestEventCallerAbstract.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\RequestParser.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketException.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\SocketManager.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ClientImpl.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_GetRequestImpl.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_PostRequestImpl.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2013\Projects\WSockReturnTst\WSockReturnTst\_ServerImpl.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
