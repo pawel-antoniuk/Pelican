@@ -16,7 +16,6 @@ public:
 		auto target = request->get_target_location();
 		std::string file = target == "/" ? "index.html" : target;
 
-
 		return new DefaultResponse(FileReader::read("C:/pages/" + file), "text/html");
 	}
 
