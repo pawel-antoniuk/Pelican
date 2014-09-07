@@ -24,6 +24,12 @@
     <Filter Include="Source Files\Helpers">
       <UniqueIdentifier>{3e28a53d-92de-414d-8ad2-d880ac8e873e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Abstracts">
+      <UniqueIdentifier>{02da0d6f-9b7f-4ca4-8d5d-901ba4e48eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Abstracts">
+      <UniqueIdentifier>{2a8f3db8-b481-4cef-8d4a-7a14b0eda62a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -53,13 +59,7 @@
     <ClCompile Include="HTTPGetRequest.cpp">
       <Filter>Source Files\Implementations</Filter>
     </ClCompile>
-    <ClCompile Include="HTTPListenerAbstract.cpp">
-      <Filter>Source Files\Implementations</Filter>
-    </ClCompile>
     <ClCompile Include="HTTPPostRequest.cpp">
-      <Filter>Source Files\Implementations</Filter>
-    </ClCompile>
-    <ClCompile Include="PipeListener.cpp">
       <Filter>Source Files\Implementations</Filter>
     </ClCompile>
     <ClCompile Include="IP.cpp">
@@ -72,7 +72,13 @@
       <Filter>Source Files\Helpers</Filter>
     </ClCompile>
     <ClCompile Include="HTTPBadRequest.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeListenerAbstract.cpp">
+      <Filter>Source Files\Abstracts</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPListenerAbstract.cpp">
+      <Filter>Source Files\Abstracts</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -127,13 +133,7 @@
     <ClInclude Include="_ServerImpl.h">
       <Filter>Header Files\Implementations</Filter>
     </ClInclude>
-    <ClInclude Include="PipeListener.h">
-      <Filter>Header Files\Implementations</Filter>
-    </ClInclude>
     <ClInclude Include="HTTPPostRequest.h">
-      <Filter>Header Files\Implementations</Filter>
-    </ClInclude>
-    <ClInclude Include="HTTPListenerAbstract.h">
       <Filter>Header Files\Implementations</Filter>
     </ClInclude>
     <ClInclude Include="HTTPGetRequest.h">
@@ -152,7 +152,16 @@
       <Filter>Header Files\Helpers</Filter>
     </ClInclude>
     <ClInclude Include="HTTPBadRequest.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTP.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeListenerAbstract.h">
+      <Filter>Header Files\Abstracts</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPListenerAbstract.h">
+      <Filter>Header Files\Abstracts</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

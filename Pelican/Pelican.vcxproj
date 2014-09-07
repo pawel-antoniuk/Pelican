@@ -19,7 +19,7 @@
     <ClCompile Include="HTTPPostRequest.cpp" />
     <ClCompile Include="IP.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="PipeListener.cpp" />
+    <ClCompile Include="PipeListenerAbstract.cpp" />
     <ClCompile Include="RequestParser.cpp" />
     <ClCompile Include="SocketException.cpp" />
     <ClCompile Include="SocketManager.cpp" />
@@ -31,6 +31,7 @@
   <ItemGroup>
     <ClInclude Include="DefaultResponse.h" />
     <ClInclude Include="FileReader.h" />
+    <ClInclude Include="HTTP.h" />
     <ClInclude Include="HTTPBadRequest.h" />
     <ClInclude Include="HTTPGetRequest.h" />
     <ClInclude Include="HTTPListenerAbstract.h" />
@@ -46,7 +47,7 @@
     <ClInclude Include="IResponse.h" />
     <ClInclude Include="IServer.h" />
     <ClInclude Include="IServerListener.h" />
-    <ClInclude Include="PipeListener.h" />
+    <ClInclude Include="PipeListenerAbstract.h" />
     <ClInclude Include="ReqestEventCallerAbstract.h" />
     <ClInclude Include="RequestParser.h" />
     <ClInclude Include="SocketException.h" />

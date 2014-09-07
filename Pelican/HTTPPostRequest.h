@@ -10,6 +10,6 @@ public:
 	HTTPPostRequest(RequestEventCallback);
 
 private:
-	virtual bool on_message(const std::string&, IMessageSender*) override;
+	virtual bool on_message(const std::string&, IMessageSender*, IMetadata*) override;
 };
 
