@@ -9,7 +9,6 @@
 #include <iostream>
 #pragma comment(lib, "ws2_32")
 
-
 class HTTPListenerImpl : public HTTPListenerAbstract{
 public:
 	IResponse* on_get_request(IGetRequest* request) override{
@@ -36,43 +35,43 @@ public:
 	}
 };
 
-
 int main(){
-	SocketManager::init();
-
-	HTTPListenerImpl listener;
-
 	try{
-		/*HTTPGetRequest getReqest([](IRequest* request)->IResponse*{
-			auto target = request->get_target_location();
-			std::string file = target == "/" ? "index.html" : target;
-			std::string out = FileReader::read("C:/pages/" + file);
-			if (out.length() == 0)
-			out = "asdasdasd";
-			return new DefaultResponse(out, "text/html; charset=utf-8");
-			});
-			HTTPPostRequest postReqest([](IRequest* request)->IResponse*{
-			auto target = request->get_target_location();
-			std::string file = target == "/" ? "index.html" : target;
-			std::string out = FileReader::read("C:/pages/" + file);
-			if (out.length() == 0)
-			out = "asdasdasd";
-			return new DefaultResponse(out, "text/html; charset=utf-8");
-			});
-
-			PipeListener pipeListener;
-			pipeListener.install(&getReqest);
-			pipeListener.install(&postReqest);*/
-
+		SocketManager::init();
+		HTTPListenerImpl listener;
 		auto server = SocketManager::TCP::create_server();
-		
 		server->async_bind(&listener);
-		//server->async_bind(&pipeListener);
 		server->listen(IP(80));
+		SocketManager::cleanup();
 	}
 	catch (SocketException& e){
-		listener.on_exception(&e);
+		if (WSAException* _e = dynamic_cast<WSAException*>(&e)){
+			std::printf("WSA exception #%d: %s", _e->code(), _e->format().c_str());
+		}
+		else /*if (InternalException* _e = dynamic_cast<InternalException*>(e))*/{
+			std::printf("Undefined exception\n");
+		}
 	}
-
-	SocketManager::cleanup();
 }
+
+/*HTTPGetRequest getReqest([](IRequest* request)->IResponse*{
+auto target = request->get_target_location();
+std::string file = target == "/" ? "index.html" : target;
+std::string out = FileReader::read("C:/pages/" + file);
+if (out.length() == 0)
+out = "asdasdasd";
+return new DefaultResponse(out, "text/html; charset=utf-8");
+});
+HTTPPostRequest postReqest([](IRequest* request)->IResponse*{
+auto target = request->get_target_location();
+std::string file = target == "/" ? "index.html" : target;
+std::string out = FileReader::read("C:/pages/" + file);
+if (out.length() == 0)
+out = "asdasdasd";
+return new DefaultResponse(out, "text/html; charset=utf-8");
+});
+
+PipeListener pipeListener;
+pipeListener.install(&getReqest);
+pipeListener.install(&postReqest);*/
+//server->async_bind(&pipeListener);
