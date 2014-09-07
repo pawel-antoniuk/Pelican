@@ -1,15 +1,10 @@
 #pragma once
 #include "IResponse.h"
 
-static const char* const MIME_HTML		 = "text/html";
-static const char* const MIME_CSS		 = "text/css";
-static const char* const MIME_JAVASCRIPT = "text/javascript";
-static const char* const MIME_PLAIN		 = "text/plain";
-
 class DefaultResponse :
 	public IResponse{
 public:
-	DefaultResponse(std::string, std::string mime);
+	DefaultResponse(std::string, std::string mime, std::string result);
 
 	virtual std::string data() override;
 	virtual PropertiesArrayType properties() override;

@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="DefaultResponse.cpp" />
     <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="HTTPBadRequest.cpp" />
     <ClCompile Include="HTTPGetRequest.cpp" />
     <ClCompile Include="HTTPListenerAbstract.cpp" />
     <ClCompile Include="HTTPPostRequest.cpp" />
@@ -30,6 +31,7 @@
   <ItemGroup>
     <ClInclude Include="DefaultResponse.h" />
     <ClInclude Include="FileReader.h" />
+    <ClInclude Include="HTTPBadRequest.h" />
     <ClInclude Include="HTTPGetRequest.h" />
     <ClInclude Include="HTTPListenerAbstract.h" />
     <ClInclude Include="HTTPPostRequest.h" />

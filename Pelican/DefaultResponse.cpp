@@ -1,8 +1,8 @@
 #include "DefaultResponse.h"
 
 
-DefaultResponse::DefaultResponse(std::string data, std::string type){
-	_result = "HTTP/1.1 200 OK";
+DefaultResponse::DefaultResponse(std::string data, std::string type, std::string result){
+	_result = result;
 	_properties.push_back(PropertiesPairType("Content-Type", type));
 	_properties.push_back(PropertiesPairType("Content-Length", std::to_string(data.size())));
 	_data = data;

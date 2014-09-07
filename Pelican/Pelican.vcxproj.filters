@@ -71,6 +71,9 @@
     <ClCompile Include="RequestParser.cpp">
       <Filter>Source Files\Helpers</Filter>
     </ClCompile>
+    <ClCompile Include="HTTPBadRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ReqestEventCallerAbstract.h">
@@ -147,6 +150,9 @@
     </ClInclude>
     <ClInclude Include="RequestParser.h">
       <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPBadRequest.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
