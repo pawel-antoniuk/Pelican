@@ -28,7 +28,6 @@
     <ClCompile Include="_ServerImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Data.h" />
     <ClInclude Include="DefaultResponse.h" />
     <ClInclude Include="FileReader.h" />
     <ClInclude Include="HTTPGetRequest.h" />

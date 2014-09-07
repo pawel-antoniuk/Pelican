@@ -1,6 +1,5 @@
 #pragma once
 #include "IServerListener.h"
-#include "Data.h"
 #include "IP.h"
 #include "IClient.h"
 #include "IServer.h"

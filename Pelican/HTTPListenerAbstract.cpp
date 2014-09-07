@@ -1,7 +1,6 @@
 #include "HTTPListenerAbstract.h"
 
 #include "IMetadata.h"
-#include "Data.h"
 #include "RequestParser.h"
 #include "_GetRequestImpl.h"
 #include "_PostRequestImpl.h"

@@ -9,45 +9,24 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Header Files\Interfaces">
+      <UniqueIdentifier>{0a56959c-1f7b-4d0b-ba34-4d0b6349346d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Implementations">
+      <UniqueIdentifier>{88f0b227-61e7-482a-a212-bf67c8a08b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Implementations">
+      <UniqueIdentifier>{f4e8a152-341f-40cb-a974-05848f611f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{a80fb521-c99d-44a7-b808-5a5b30614768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{3e28a53d-92de-414d-8ad2-d880ac8e873e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="_ClientImpl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="_GetRequestImpl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="_PostRequestImpl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="_ServerImpl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DefaultResponse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FileReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HTTPGetRequest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HTTPListenerAbstract.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HTTPPostRequest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IP.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PipeListener.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RequestParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SocketException.cpp">
@@ -56,78 +35,45 @@
     <ClCompile Include="SocketManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_ClientImpl.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="_GetRequestImpl.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="_PostRequestImpl.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="_ServerImpl.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultResponse.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPGetRequest.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPListenerAbstract.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPPostRequest.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeListener.cpp">
+      <Filter>Source Files\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="IP.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="FileReader.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestParser.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="_ClientImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="_GetRequestImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="_PostRequestImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="_ServerImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Data.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DefaultResponse.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileReader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HTTPGetRequest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HTTPListenerAbstract.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HTTPPostRequest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IClient.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IGetRequest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IMessageSender.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IMetadata.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IP.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IPipeElement.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IPostRequest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IRequest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IResponse.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IServer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IServerListener.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PipeListener.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ReqestEventCallerAbstract.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RequestParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SocketException.h">
@@ -135,6 +81,72 @@
     </ClInclude>
     <ClInclude Include="SocketManager.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IClient.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGetRequest.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IMessageSender.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IMetadata.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IPipeElement.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IPostRequest.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IRequest.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IResponse.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IServer.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IServerListener.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="_ClientImpl.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="_GetRequestImpl.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="_PostRequestImpl.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="_ServerImpl.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeListener.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPPostRequest.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPListenerAbstract.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPGetRequest.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultResponse.h">
+      <Filter>Header Files\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="FileReader.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IP.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestParser.h">
+      <Filter>Header Files\Helpers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
