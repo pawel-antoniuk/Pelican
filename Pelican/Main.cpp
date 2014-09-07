@@ -60,6 +60,7 @@ int main(){
 
 			return new DefaultResponse(FileReader::read("C:/pages/" + file), mime[ext]);
 		});
+
 		HTTPPostRequest postReqest([](IRequest* request)->IResponse*{
 			std::cout << "error\n";
 
