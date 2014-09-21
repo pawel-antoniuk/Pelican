@@ -32,7 +32,6 @@ void _ServerImpl::async_bind(IServerListener* listener){
 	_server_listener = listener;
 }
 
-#include <iostream>
 void _ServerImpl::close(){
 	//kick all clients
 	for (auto& clients_group : _clients){
