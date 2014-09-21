@@ -7,21 +7,12 @@ public:
 	IP(int ipAddr, short port);
 	IP(const std::string& ipAddr, short port);
 	IP(short port);
-	IP(const IP& ip){
-		_addr = ip._addr;
-		_port = ip._port;
-	}
+	IP(const IP& ip);
 
-	int addr() const {
-		return _addr;
-	}
-
-	unsigned short port() const {
-		return _port;
-	}
-
-	std::string to_string();
-	unsigned long to_long(){ return _addr; }
+	int addr() const;
+	unsigned short port() const;
+	std::string to_string() const;
+	unsigned long to_long() const;
 
 private:
 	void set_addr(const std::string&);

@@ -14,7 +14,7 @@ public:
 	virtual void uninstall(IPipeElement*);
 
 protected:
-	virtual bool on_pre_request(const std::string&, IMetadata*&) = 0;
+	virtual bool before_request(const std::string&, IMetadata*&) = 0;
 
 	virtual void on_connection(IClient* client) override;
 	virtual void on_disconnection(IClient* client) override;

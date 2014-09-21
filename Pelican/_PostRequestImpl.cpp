@@ -7,3 +7,7 @@ _PostRequestImpl::_PostRequestImpl(std::string target){
 std::string _PostRequestImpl::get_target_location(){
 	return _target_location;
 }
+
+std::string _PostRequestImpl::get_target_extension(){
+	return _target_location.substr(_target_location.rfind('.') + 1);
+}

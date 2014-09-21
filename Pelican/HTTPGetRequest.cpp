@@ -2,8 +2,6 @@
 
 #include "_GetRequestImpl.h"
 
-#include <iostream>
-
 HTTPGetRequest::HTTPGetRequest(){
 }
 

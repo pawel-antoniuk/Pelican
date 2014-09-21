@@ -30,6 +30,12 @@
     <Filter Include="Source Files\Abstracts">
       <UniqueIdentifier>{2a8f3db8-b481-4cef-8d4a-7a14b0eda62a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Helpers\XML">
+      <UniqueIdentifier>{4889481a-b3ff-4ba3-8642-6166c77000ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers\XML">
+      <UniqueIdentifier>{3d64ca62-6819-4754-87c0-b62bc9d0e3f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -79,6 +85,18 @@
     </ClCompile>
     <ClCompile Include="HTTPListenerAbstract.cpp">
       <Filter>Source Files\Abstracts</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPServerConfigManager.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Helpers\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLParser.cpp">
+      <Filter>Source Files\Helpers\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPPipeListenerAbstract.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +180,18 @@
     </ClInclude>
     <ClInclude Include="HTTPListenerAbstract.h">
       <Filter>Header Files\Abstracts</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPServerConfigManager.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Helpers\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLParser.h">
+      <Filter>Header Files\Helpers\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPPipeListenerAbstract.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

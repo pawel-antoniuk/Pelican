@@ -28,7 +28,7 @@ void PipeListenerAbstract::on_read(IClient* client){
 	meta->data += data;
 
 	IMetadata* metadata = nullptr;
-	if (on_pre_request(meta->data, metadata)){
+	if (before_request(meta->data, metadata)){
 		for (auto& element : _elements)
 			if (element->on_message(meta->data, client, metadata))
 				break;

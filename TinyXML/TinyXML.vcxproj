@@ -11,68 +11,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HTTPPipeListenerAbstract.cpp" />
-    <ClCompile Include="HTTPServerConfigManager.cpp" />
-    <ClCompile Include="DefaultResponse.cpp" />
-    <ClCompile Include="FileReader.cpp" />
-    <ClCompile Include="HTTPBadRequest.cpp" />
-    <ClCompile Include="HTTPGetRequest.cpp" />
-    <ClCompile Include="HTTPListenerAbstract.cpp" />
-    <ClCompile Include="HTTPPostRequest.cpp" />
-    <ClCompile Include="IP.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Node.cpp" />
-    <ClCompile Include="PipeListenerAbstract.cpp" />
-    <ClCompile Include="RequestParser.cpp" />
-    <ClCompile Include="SocketException.cpp" />
-    <ClCompile Include="SocketManager.cpp" />
-    <ClCompile Include="XMLParser.cpp" />
-    <ClCompile Include="_ClientImpl.cpp" />
-    <ClCompile Include="_GetRequestImpl.cpp" />
-    <ClCompile Include="_PostRequestImpl.cpp" />
-    <ClCompile Include="_ServerImpl.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HTTPPipeListenerAbstract.h" />
-    <ClInclude Include="HTTPServerConfigManager.h" />
-    <ClInclude Include="DefaultResponse.h" />
-    <ClInclude Include="FileReader.h" />
-    <ClInclude Include="HTTP.h" />
-    <ClInclude Include="HTTPBadRequest.h" />
-    <ClInclude Include="HTTPGetRequest.h" />
-    <ClInclude Include="HTTPListenerAbstract.h" />
-    <ClInclude Include="HTTPPostRequest.h" />
-    <ClInclude Include="IClient.h" />
-    <ClInclude Include="IGetRequest.h" />
-    <ClInclude Include="IMessageSender.h" />
-    <ClInclude Include="IMetadata.h" />
-    <ClInclude Include="IP.h" />
-    <ClInclude Include="IPipeElement.h" />
-    <ClInclude Include="IPostRequest.h" />
-    <ClInclude Include="IRequest.h" />
-    <ClInclude Include="IResponse.h" />
-    <ClInclude Include="IServer.h" />
-    <ClInclude Include="IServerListener.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="PipeListenerAbstract.h" />
-    <ClInclude Include="ReqestEventCallerAbstract.h" />
-    <ClInclude Include="RequestParser.h" />
-    <ClInclude Include="SocketException.h" />
-    <ClInclude Include="SocketManager.h" />
-    <ClInclude Include="XMLParser.h" />
-    <ClInclude Include="_ClientImpl.h" />
-    <ClInclude Include="_GetRequestImpl.h" />
-    <ClInclude Include="_PostRequestImpl.h" />
-    <ClInclude Include="_ServerImpl.h" />
+    <ClInclude Include="tinyxml2.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E870BA14-F2C7-4872-BF37-EC62D809F2E2}</ProjectGuid>
+    <ProjectGuid>{771F9E2F-B83D-414B-9139-D834D5622706}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Pelican</RootNamespace>
+    <RootNamespace>TinyXML</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
