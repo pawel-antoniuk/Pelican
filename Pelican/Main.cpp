@@ -5,7 +5,7 @@
 
 #pragma comment(lib, "ws2_32")
 
-HTTPServerConfigManager config("C:/tests/config.xml");
+HTTPServerConfigManager config("C:/pages/config.xml");
 auto home_location = config.get_home_location();
 
 int main(){
