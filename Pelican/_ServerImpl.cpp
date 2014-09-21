@@ -32,15 +32,23 @@ void _ServerImpl::async_bind(IServerListener* listener){
 	_server_listener = listener;
 }
 
+#include <iostream>
 void _ServerImpl::close(){
+	//kick all clients
 	for (auto& clients_group : _clients){
 		for (int i = 0; i < clients_group->unit.count; ++i){
-			delete clients_group->unit.clients[i];
-			CloseHandle(clients_group->unit.events[i]);
+			clients_group->unit.clients[i]->close();
+			WSASetEvent(clients_group->unit.events[i]); //stimutale group listener
 		}
-
-		delete clients_group;
 	}
+
+	//wait until all threads terminate
+	//no clients = no threads
+	while (_clients.size())
+		std::this_thread::sleep_for(std::chrono::milliseconds(0));
+
+	//stop listening
+	WSASetEvent(_listener_event);
 }
 
 void _ServerImpl::each_client(void(*func)(IClient*)){
@@ -136,8 +144,11 @@ void _ServerImpl::_clients_group_listen_proc(ClientsGroup::Unit* unit){
 			if (i == WSA_WAIT_FAILED)
 				throw WSAException();
 
-			if (WSAEnumNetworkEvents(unit->clients[i]->_socket, unit->events[i], &events) == SOCKET_ERROR)
-				throw WSAException();
+			//TODO: bug: wylaczony socket nie w parametrze = exception
+			/*if (WSAEnumNetworkEvents(unit->clients[i]->_socket, unit->events[i], &events) == SOCKET_ERROR)
+				throw WSAException();*/
+
+			WSAEnumNetworkEvents(unit->clients[i]->_socket, unit->events[i], &events);
 
 			if (events.lNetworkEvents & FD_CLOSE || !unit->clients[i]->active()){
 				if (_server_listener)

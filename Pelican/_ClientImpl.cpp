@@ -35,7 +35,7 @@ void _ClientImpl::connect(const IP& ip){
 		_active = true;
 	}
 }
-
+#include <iostream>
 void _ClientImpl::close(){
 	if (_active){
 		::shutdown(_socket, SD_BOTH);

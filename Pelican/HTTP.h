@@ -10,7 +10,6 @@
 #include "XMLParser.h"
 #include "HTTPPipeListenerAbstract.h"
 
-
 namespace HTTPResult{
 	const std::string OK = "HTTP/1.1 200 OK";
 	const std::string NOT_FOUND = "HTTP/1.1 404 Not Found";

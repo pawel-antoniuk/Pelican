@@ -62,7 +62,7 @@ Node* XMLParser::create_tree(const std::string & buf){
 				work_buf[i] = input_buf[index];
 			}
 
-			current_node->attr("text")->value(std::string(work_buf, i));
+			current_node->attr("#")->value(std::string(work_buf, i));
 		}
 		else{
 			for (; isspace(input_buf[index]); ++index);

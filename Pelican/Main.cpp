@@ -12,7 +12,8 @@ int main(){
 	SocketManager::init();
 
 	try{
-		class : public HTTPPipeListenerAbstract{
+		class :
+			public HTTPPipeListenerAbstract{
 		public:
 			virtual void on_exception(SocketException* e) override{
 				if (WSAException* _e = dynamic_cast<WSAException*>(e)){
@@ -21,6 +22,7 @@ int main(){
 				else{
 					std::printf("Undefined exception\n");
 				}
+				abort();
 			}
 		}listener;
 
@@ -35,7 +37,8 @@ int main(){
 			auto context = FileReader::read(home_location + target);
 
 			if (context.size()){
-				return new DefaultResponse(context, config.get_mime(request->get_target_extension()), HTTPResult::OK);
+				return new DefaultResponse(context,
+					config.get_mime(request->get_target_extension()), HTTPResult::OK);
 			}
 			else{
 				return new DefaultResponse(FileReader::read(home_location + config.get_page_path(404)),
@@ -54,7 +57,16 @@ int main(){
 		//tcp server
 		auto server = SocketManager::TCP::create_server();
 		server->async_bind(&listener);
-		server->listen(IP(80));
+		std::thread listen_thread(std::bind(std::mem_fn(&IServer::listen), server, IP(80)));
+
+		std::string cmd;
+		while (std::cin >> cmd){
+			if (cmd == "exit"){
+				server->close();
+				listen_thread.join();
+				break;
+			}
+		}
 	}
 	catch (SocketException& e){
 		if (WSAException* _e = dynamic_cast<WSAException*>(&e)){
