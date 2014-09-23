@@ -1,9 +1,9 @@
-#include "FileReader.h"
+#include "FileMapper.h"
 
 #undef UNICODE
 #include <Windows.h>
 
-std::string FileReader::read(std::string path){
+std::string FileMapper::read(std::string path){
 	HANDLE hFile = CreateFile(path.c_str(), GENERIC_READ, FILE_SHARE_READ, 0, OPEN_EXISTING, 0, 0);
 
 	if (hFile == INVALID_HANDLE_VALUE)

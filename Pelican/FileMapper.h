@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-class FileReader{
+class FileMapper{
 public:
 	static std::string read(std::string path);
 };

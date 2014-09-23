@@ -14,7 +14,7 @@
     <ClCompile Include="HTTPPipeListenerAbstract.cpp" />
     <ClCompile Include="HTTPServerConfigManager.cpp" />
     <ClCompile Include="DefaultResponse.cpp" />
-    <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="FileMapper.cpp" />
     <ClCompile Include="HTTPBadRequest.cpp" />
     <ClCompile Include="HTTPGetRequest.cpp" />
     <ClCompile Include="HTTPListenerAbstract.cpp" />
@@ -36,7 +36,7 @@
     <ClInclude Include="HTTPPipeListenerAbstract.h" />
     <ClInclude Include="HTTPServerConfigManager.h" />
     <ClInclude Include="DefaultResponse.h" />
-    <ClInclude Include="FileReader.h" />
+    <ClInclude Include="FileMapper.h" />
     <ClInclude Include="HTTP.h" />
     <ClInclude Include="HTTPBadRequest.h" />
     <ClInclude Include="HTTPGetRequest.h" />

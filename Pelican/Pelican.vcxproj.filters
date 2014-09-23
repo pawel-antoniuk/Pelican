@@ -71,9 +71,6 @@
     <ClCompile Include="IP.cpp">
       <Filter>Source Files\Helpers</Filter>
     </ClCompile>
-    <ClCompile Include="FileReader.cpp">
-      <Filter>Source Files\Helpers</Filter>
-    </ClCompile>
     <ClCompile Include="RequestParser.cpp">
       <Filter>Source Files\Helpers</Filter>
     </ClCompile>
@@ -97,6 +94,9 @@
     </ClCompile>
     <ClCompile Include="HTTPPipeListenerAbstract.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileMapper.cpp">
+      <Filter>Source Files\Helpers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,9 +160,6 @@
     <ClInclude Include="DefaultResponse.h">
       <Filter>Header Files\Implementations</Filter>
     </ClInclude>
-    <ClInclude Include="FileReader.h">
-      <Filter>Header Files\Helpers</Filter>
-    </ClInclude>
     <ClInclude Include="IP.h">
       <Filter>Header Files\Helpers</Filter>
     </ClInclude>
@@ -192,6 +189,9 @@
     </ClInclude>
     <ClInclude Include="HTTPPipeListenerAbstract.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMapper.h">
+      <Filter>Header Files\Helpers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

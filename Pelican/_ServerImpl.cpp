@@ -44,7 +44,7 @@ void _ServerImpl::close(){
 	//wait until all threads terminate
 	//no clients = no threads
 	while (_clients.size())
-		std::this_thread::sleep_for(std::chrono::milliseconds(0));
+		std::this_thread::sleep_for(std::chrono::milliseconds(1));
 
 	//stop listening
 	WSASetEvent(_listener_event);

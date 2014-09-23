@@ -1,6 +1,6 @@
 #pragma once
 #include "DefaultResponse.h"
-#include "FileReader.h"
+#include "FileMapper.h"
 #include "HTTPListenerAbstract.h"
 #include "PipeListenerAbstract.h"
 #include "HTTPGetRequest.h"
