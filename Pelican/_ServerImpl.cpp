@@ -56,6 +56,15 @@ void _ServerImpl::each_client(void(*func)(IClient*)){
 			func(clients->unit.clients[i]);
 }
 
+size_t _ServerImpl::slots(){
+	size_t n = 0;
+	for (auto& clients : _clients)
+		for (int i = 0; i < clients->unit.count; ++i)
+			++n;
+
+	return n;
+}
+
 _ClientImpl* _ServerImpl::create_client(SOCKET new_socket){
 	return new _ClientImpl(new_socket);
 }
@@ -74,15 +83,15 @@ void _ServerImpl::_add(_ClientImpl* client){
 	if (WSAEventSelect(client->_socket, evnt, FD_READ | FD_CLOSE) == SOCKET_ERROR)
 		throw WSAException();
 
+	std::lock_guard<std::mutex> locker(_socket_group_mutex); //critical section
+
 	//find free group
 	size_t index = -1;
 	for (int i = 0; i < _clients.size(); ++i)
 		if (_clients[i]->unit.count < MAX_SLOTS_PER_THREAD)
 			index = i;
 
-	std::lock_guard<std::mutex> locker(_socket_group_mutex); //critical section
-
-	//if not, create new group 1/2
+	//if not found, create new group 1/2
 	bool new_group_created = false;
 	if (index == -1){
 		index = _clients.size();

@@ -15,13 +15,16 @@ _ClientImpl::~_ClientImpl(){
 void _ClientImpl::send(const std::string& data){
 	int n = 0;
 	while (n < data.size()) //send all
-		n += ::send(_socket, &data.data()[n], data.size() - n, 0);
+		n += ::send(_socket, &data.data()[n], (int)data.size() - n, 0);
 }
 
-std::string _ClientImpl::recv(int bufferSize){
-	char* buf = new char[bufferSize];
-	int recived = ::recv(_socket, buf, bufferSize, 0);
-	return std::string(buf, recived);
+std::string _ClientImpl::recv(int size){
+	auto tmp_buf = new char[size];
+	auto recived = ::recv(_socket, tmp_buf, size, 0);
+	std::string out(tmp_buf, recived);
+	delete tmp_buf;
+
+	return out;
 }
 
 void _ClientImpl::connect(const IP& ip){

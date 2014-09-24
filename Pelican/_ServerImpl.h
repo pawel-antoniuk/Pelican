@@ -33,6 +33,7 @@ public:
 	virtual void async_bind(IServerListener* listener) override;
 	virtual void close() override;
 	virtual void each_client(void(*func)(IClient*)) override;
+	virtual size_t slots() override;
 
 protected:
 	virtual _ClientImpl* create_client(SOCKET);

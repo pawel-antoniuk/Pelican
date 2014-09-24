@@ -5,7 +5,7 @@
 
 #pragma comment(lib, "ws2_32")
 
-HTTPServerConfigManager config("config.xml");
+HTTPServerConfigManager config(R"(C:\pages\config.xml)");
 auto home_location = config.get_home_location();
 
 int main(){
@@ -16,13 +16,11 @@ int main(){
 			public HTTPPipeListenerAbstract{
 		public:
 			virtual void on_exception(SocketException* e) override{
-				if (WSAException* _e = dynamic_cast<WSAException*>(e)){
+				if (WSAException* _e = dynamic_cast<WSAException*>(e))
 					std::printf("WSA exception #%d: %s", _e->code(), _e->format().c_str());
-				}
-				else{
+				else
 					std::printf("Undefined exception\n");
-				}
-				abort();
+				std::terminate();
 			}
 		}listener;
 
@@ -66,15 +64,16 @@ int main(){
 				listen_thread.join();
 				break;
 			}
+			else if (cmd == "slots"){
+				std::printf("%d\n", server->slots());
+			}
 		}
 	}
 	catch (SocketException& e){
-		if (WSAException* _e = dynamic_cast<WSAException*>(&e)){
+		if (WSAException* _e = dynamic_cast<WSAException*>(&e))
 			std::printf("WSA exception #%d: %s", _e->code(), _e->format().c_str());
-		}
-		else{
+		else
 			std::printf("Undefined exception\n");
-		}
 	}
 
 	SocketManager::cleanup();

@@ -15,6 +15,7 @@ public:
 	virtual void async_bind(IServerListener*) = 0;
 	virtual void close() = 0;
 	virtual void each_client(void(*)(IClient*)) = 0;
+	virtual size_t slots() = 0;
 	//virtual std::vector<std::pair<SocketGroup, std::thread>> get_client_groups() = 0;
 };
 
